@@ -1,1 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"content="Contact and student feedback form for our Web Systems and Technology team.">
+    <title>Contact Us - Team Web Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Web Systems &amp; Technology Team Project</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Contact &amp; Student Feedback</h1>
+
+        <form action="#" method="POST">
+
+            <!-- Full Name -->
+            <label for="full-name">Full Name</label>
+            <input
+                type="text"
+                id="full-name"
+                name="full_name"
+                required
+            >
+
+            <!-- Email -->
+            <label for="email">Email Address</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                required
+            >
+
+            <!-- Password -->
+            <label for="password">Password</label>
+            <input
+                type="password"
+                id="password"
+                name="password"
+                required
+            >
+
+            <!-- User Role -->
+            <fieldset>
+                <legend>User Role</legend>
+
+                <label for="student">
+                    <input
+                        type="radio"
+                        id="student"
+                        name="role"
+                        value="student"
+                        required
+                    >
+                    Student
+                </label>
+
+                <label for="teacher">
+                    <input
+                        type="radio"
+                        id="teacher"
+                        name="role"
+                        value="teacher"
+                    >
+                    Teacher
+                </label>
+
+                <label for="visitor">
+                    <input
+                        type="radio"
+                        id="visitor"
+                        name="role"
+                        value="visitor"
+                    >
+                    Visitor
+                </label>
+            </fieldset>
+
+            <!-- Interests -->
+            <fieldset>
+                <legend>Interests</legend>
+
+                <label for="html">
+                    <input
+                        type="checkbox"
+                        id="html"
+                        name="interest"
+                        value="html"
+                    >
+                    HTML
+                </label>
+
+                <label for="css">
+                    <input
+                        type="checkbox"
+                        id="css"
+                        name="interest"
+                        value="css"
+                    >
+                    CSS
+                </label>
+
+                <label for="javascript">
+                    <input
+                        type="checkbox"
+                        id="javascript"
+                        name="interest"
+                        value="javascript"
+                    >
+                    JavaScript
+                </label>
+            </fieldset>
+
+            <!-- Message -->
+            <label for="message">Message</label>
+            <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+            ></textarea>
+
+            <!-- Subject Category -->
+            <label for="subject">Subject Category</label>
+
+            <select
+                id="subject"
+                name="subject"
+                required
+            >
+                <option value="">-- Select a subject --</option>
+                <option value="feedback">Website Feedback</option>
+                <option value="question">Question</option>
+                <option value="suggestion">Suggestion</option>
+            </select>
+
+            <!-- Buttons -->
+            <div class="buttons">
+
+                <button type="submit">
+                    Submit
+                </button>
+
+                <button type="reset">
+                    Reset
+                </button>
+
+            </div>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2026 Web Systems &amp; Technology Team Project
+        </p>
+    </footer>
+
+</body>
+
+</html> 
 
